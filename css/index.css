@@ -222,7 +222,7 @@ span {
 
 
 .grid-product {
-   background-image: url(/ShoesBear/imgs/image.png);
+   background-image: url(/imgs/image.png);
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     width: 100%;
