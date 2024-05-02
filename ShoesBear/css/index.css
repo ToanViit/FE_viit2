@@ -222,13 +222,12 @@ span {
 
 
 .grid-product {
-    background-color: rgb(235, 151, 49);
+   background-image: url(/ShoesBear/imgs/image.png);
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     width: 100%;
-
-
 }
+
 
 .notice:hover  { 
 
@@ -236,14 +235,16 @@ span {
 
 .grid-noitce  {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     width: 100%;
 }
 
 .section-header {
+    color: rgb(55, 55, 28);
+    background-repeat: none;
     text-align: center;
-    padding: 50px;
-    font-weight: 600;
+    padding: 20px;
+    font-weight: 500;
 }
 
 .grid-product__link {
@@ -432,9 +433,7 @@ span {
 
 }
 
-.noitce  { 
-background-size: cover;
-}  
+
 
 .btn_order {
   
@@ -453,8 +452,48 @@ background-size: cover;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
 }
-
+.noitce:hover .noitce_Sale1::after {
+    content: ""; /* Thêm dòng chữ vào phần tử sau khi hover */
+    position: absolute;
+    top: 50%; /* Đưa phần tử vào vị trí giữa theo chiều dọc */
+    left: 50%; /* Đưa phần tử vào vị trí giữa theo chiều ngang */
+    transform: translate(-50%, -50%); /* Dịch chuyển phần tử để nằm chính giữa */
+    color: white; /* Màu chữ */
+    font-size: 50px; /* Cỡ chữ */
+    text-align: center; /* Căn giữa theo chiều ngang */
+    line-height: 1.5; /* Đảm bảo chữ văn bản nằm giữa phần tử */
+    z-index: 1; /* Đảm bảo phần tử này nằm trên lớp đen */
+}
 
 .grid-noitce { 
 background-size: cover;
+
+width: 100%;
  } 
+
+ .noitce { 
+    cursor: pointer;
+    
+ }
+
+ @media screen {
+    
+ }
+
+@media only screen and (max-width: 430px) {
+    /* CSS rules for screens up to 430px wide */
+    .text_title2{
+        font-size: 20px;
+    }
+    .text_title{
+     visibility: hidden;
+        font-size: 10px;
+         
+    }
+    .btn_order { 
+        transform: translateY(-40px);
+        scale:  0.5;
+        margin-bottom: 20px;
+    }
+  }
+  
