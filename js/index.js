@@ -37,6 +37,17 @@
 //     handleInterval()
 // });
 
+// FOOTER DROPDOWLIST 
+document.addEventListener('DOMContentLoaded', function () {
+    const menus = document.querySelectorAll('.footer-menu h4');
+
+    menus.forEach(menu => {
+        menu.addEventListener('click', function () {
+            const parent = this.parentElement;
+            parent.classList.toggle('active');
+        });
+    });
+});
 
 
 
