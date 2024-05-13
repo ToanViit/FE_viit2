@@ -1510,6 +1510,9 @@
         flex-wrap: nowrap !important;
         max-width: 500px !important;
     }
+    .text_decrib {
+        font-size: 11px !important;
+    }
     .btn_order { 
         width: 300px;
     }
